@@ -5,6 +5,14 @@
 body {
     color: #333;
     font-family: "Bree Serif", serif;
+    background-color: #f8f5f5;
+}
+
+.wrapper {
+    color: #333;
+    font-family: "Bree Serif", serif;
+    background-color: #f8f5f5;
+    /* font-size: 50px; */
 }
 
 /* common */
@@ -22,14 +30,14 @@ body {
 .header {
     background-color: #cacaca;
     height: 102px;
+    display: flex;
+    align-items: center;
 }
 
 .header .inner {
     display: flex;
     align-items: center;
 }
-
-
 
 .header .nav {
     margin-left: auto;
@@ -41,7 +49,8 @@ body {
     text-decoration: none;
     color: inherit;
 }
-.header .nav a:hover{
+
+.header .nav a:hover {
     color: #17678a;
 }
 
@@ -59,7 +68,9 @@ input {
 .header form {
     margin-left: 32px;
 }
-a, input{
+
+a,
+input {
     color: inherit;
 }
 
@@ -82,32 +93,32 @@ a, input{
 }
 
 .search-input::placeholder,
-.search-icon{
+.search-icon {
     color: #999;
 }
 
 /* navbar */
-.navbar{
+.navbar {
     background-color: #14485b;
     height: 50px;
 }
 
-.navbar .navbar-list{
+.navbar .navbar-list {
     display: flex;
-    gap: 20px;
-    width: 1200px;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    /* gap: 20px; */
+    /* width: 1200px; */
+    height: 50px;
+    /* margin-left: auto;
+    margin-right: auto; */
     align-items: center;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
 }
 
-.navbar li:hover{
+.navbar li:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -122,3 +133,229 @@ a, input{
 
 
 
+/* post-pages */
+
+
+
+.post-pages {
+    display: flex;
+    gap: 40px;
+
+}
+
+.post {
+    flex-grow: 1;
+}
+
+.sidebar {
+    width: 1000px;
+
+}
+
+
+.post-section~.post-section {
+    margin-top: 20px;
+}
+
+.post-section {
+
+    border: 1px solid #999;
+    background-color: #fff;
+}
+
+.post-sc {
+    padding: 10px;
+}
+
+.post-sc a:hover {
+    text-decoration: underline;
+}
+
+.post-pages {
+    margin: 30px 0;
+}
+
+h1.post-title {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+}
+
+p a {
+    color: #17678a;
+}
+
+.bob {
+    display: flex;
+    margin-right: -20px;
+    /* gap: 200px; */
+    margin-left: 20px;
+}
+
+p {
+    font: 16px / 1.5 Georgia, serif;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+span.fly {
+    background-color: #14485b;
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    padding: 15px 16px;
+    margin-top: 5px;
+    white-space: nowrap;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+span.fly::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    border-width: 11px 10px 0 0;
+    border-style: solid;
+    border-color: #0b2f36 transparent transparent transparent;
+}
+
+
+
+h1.post-title a:hover {
+    color: #14485b;
+}
+
+
+p.post-author {
+    display: flex;
+    align-items: center;
+}
+
+p.post-author img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+p.post-author a {
+    margin-left: 3px;
+}
+
+
+
+/* icon css */
+
+.icon ul {
+    display: flex;
+    gap: 10px;
+}
+
+.icon ul li i {
+    display: inline-block;
+    font-size: 30px;
+}
+
+
+.content-1 b {
+    font-weight: bold;
+    color: #17678a;
+}
+
+.rotate-45 {
+    transform: rotate(-90deg);
+}
+
+.site-container ul li a {
+    color: #17678a;
+    font: 16px / 1.5 Georgia, serif;
+}
+
+
+ul.cap li a:hover {
+    text-decoration: underline;
+}
+
+.icon ul li .rss {
+    background-color: #fff;
+    color: #f26109;
+}
+
+.icon ul li .twitter {
+    background-color: #fff;
+    color: #4da7de;
+}
+
+.icon ul li .github {
+    background-color: #fff;
+    color: #000;
+}
+
+.icon ul li .facebook {
+    background-color: #fff;
+    color: #4da7de;
+}
+
+.icon ul li .linkedin {
+    background-color: #fff;
+    color: #3371b7;
+}
+
+.icon ul li:hover {
+    transform: translateY(-5px);
+
+}
+
+
+.sidebar-box .sidebar-box-1 {
+    background-color: #14485b;
+    color: #fff;
+    font-family: 'Bree Serif', serif;
+    font-weight: normal;
+    font-size: 1.17em;
+    border: 1px solid #999;
+    margin: 10px 0;
+    padding-bottom: 12px;
+
+
+}
+
+.cer {
+    text-align: center;
+}
+
+.sidebar-box img.img-1 {
+    width: 100%;
+}
+
+
+.pagination-section a .forward {
+    transform: rotate(180deg);
+    margin: 0 5px;
+}
+
+
+span.copy {
+    margin-right: 20px;
+}
+
+.footer-end {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+
+.pagination-section a {
+    color: #14485b;
+}
+
+.pagination-section a:hover {
+    text-decoration: underline;
+}
