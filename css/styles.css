@@ -235,6 +235,8 @@ h1.post-title a:hover {
 p.post-author {
     display: flex;
     align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 p.post-author img {
@@ -350,6 +352,10 @@ span.copy {
     padding: 20px 0;
     font-size: 14px;
     color: #666;
+}
+
+.footer-end a:hover{
+    color: #494747;
 }
 
 
